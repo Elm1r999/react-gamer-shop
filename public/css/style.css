@@ -412,11 +412,6 @@ textarea.input {
   color: #FFF;
 }
 
-.header-ctn>div>a>i {
-  display: block;
-  font-size: 18px;
-}
-
 .header-ctn>div>a>span {
   font-size: 12px;
 }
@@ -824,17 +819,13 @@ textarea.input {
   height: 20px;
 }
 
-.product .product-body .product-rating>i {
+.product .product-body .product-rating>svg {
   position: relative;
   width: 14px;
   margin-right: -4px;
   background: #FFF;
-  color: #E4E7ED;
+  color: goldenrod;
   z-index: 10;
-}
-
-.product .product-body .product-rating>i.fa-star {
-  color: #ef233c;
 }
 
 .product .product-body .product-rating:after {
@@ -927,28 +918,10 @@ textarea.input {
   transition: 0.2s all;
 }
 
-.product .add-to-cart .add-to-cart-btn>i {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  color: #D10024;
-  opacity: 0;
-  visibility: hidden;
-}
-
 .product .add-to-cart .add-to-cart-btn:hover {
   background-color: #FFF;
   color: #D10024;
   border-color: #D10024;
-  padding: 0px 30px 0px 50px;
-}
-
-.product .add-to-cart .add-to-cart-btn:hover>i {
-  opacity: 1;
-  visibility: visible;
 }
 
 .product-widget {
@@ -1296,12 +1269,8 @@ textarea.input {
   margin-right: 15px;
 }
 
-.product-details .product-rating>i {
-  color: #E4E7ED;
-}
-
-.product-details .product-rating>i.fa-star {
-  color: #D10024;
+.product-details .product-rating>svg {
+  color: goldenrod;
 }
 
 .product-details .review-link {
@@ -1345,7 +1314,9 @@ textarea.input {
 }
 
 .product-details .product-options .input-select {
-  width: 90px;
+  cursor: pointer;
+  width: auto; 
+  max-width: auto;
 }
 
 .product-details .add-to-cart {
@@ -1366,28 +1337,10 @@ textarea.input {
   transition: 0.2s all;
 }
 
-.product-details .add-to-cart .add-to-cart-btn>i {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  color: #D10024;
-  opacity: 0;
-  visibility: hidden;
-}
-
 .product-details .add-to-cart .add-to-cart-btn:hover {
   background-color: #FFF;
   color: #D10024;
   border-color: #D10024;
-  padding: 0px 30px 0px 50px;
-}
-
-.product-details .add-to-cart .add-to-cart-btn:hover>i {
-  opacity: 1;
-  visibility: visible;
 }
 
 .product-details .add-to-cart .qty-label {
@@ -1400,6 +1353,7 @@ textarea.input {
 }
 
 .product-details .add-to-cart .qty-label .input-number {
+  height: auto;
   width: 90px;
   display: inline-block;
 }
@@ -1484,6 +1438,9 @@ textarea.input {
   width: 100%;
 }
 
+
+
+
 .rating-avg {
   font-size: 24px;
   font-weight: 700;
@@ -1498,11 +1455,7 @@ textarea.input {
   display: inline-block;
 }
 
-.rating-avg .rating-stars>i, .rating .rating-stars>i {
-  color: #E4E7ED;
-}
-
-.rating-avg .rating-stars>i.fa-star, .rating .rating-stars>i.fa-star {
+.rating-avg .rating-stars>svg, .rating .rating-stars>svg {
   color: #D10024;
 }
 
@@ -1564,16 +1517,9 @@ textarea.input {
   margin: 0;
 }
 
-.reviews .review-heading .review-rating {
+.reviews .review-heading .review-rating>svg {
+  color: goldenrod;
   margin-top: 5px;
-}
-
-.reviews .review-heading .review-rating>i {
-  color: #E4E7ED;
-}
-
-.reviews .review-heading .review-rating>i.fa-star {
-  color: #D10024;
 }
 
 .reviews-pagination {
@@ -1612,40 +1558,41 @@ textarea.input {
   margin-bottom: 15px;
 }
 
-.review-form .input-rating {
-  margin-bottom: 15px;
+.rate {
+  float: left;
+  height: auto;
+  padding: 0 10px 0 0;
 }
 
-.review-form .input-rating .stars {
-  display: inline-block;
-  vertical-align: top;
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
 }
-
-.review-form .input-rating .stars input[type="radio"] {
-  display: none;
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
 }
-
-.review-form .input-rating .stars>label {
-  float: right;
-  cursor: pointer;
-  padding: 0px 3px;
-  margin: 0px;
+.rate:not(:checked) > label:before {
+  content: '★ ';
 }
-
-.review-form .input-rating .stars>label:before {
-  content: "\f006";
-  color: #E4E7ED;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
+.rate > input:checked ~ label {
+  color: #ffc700;    
 }
-
-.review-form .input-rating .stars>label:hover:before, .review-form .input-rating .stars>label:hover~label:before {
-  color: #D10024;
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
 }
-
-.review-form .input-rating .stars>input:checked label:before, .review-form .input-rating .stars>input:checked~label:before {
-  content: "\f005";
-  color: #D10024;
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
 }
 
 .billing-details {

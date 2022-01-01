@@ -20,7 +20,7 @@ const ShoppingSideNav = () => {
                         <input type="checkbox" id="category-2" />
                         <label htmlFor="category-2">
                             <span></span>
-                            Smartphones
+                            Monitors
                             <small>(740)</small>
                         </label>
                     </div>
@@ -29,7 +29,7 @@ const ShoppingSideNav = () => {
                         <input type="checkbox" id="category-3" />
                         <label htmlFor="category-3">
                             <span></span>
-                            Cameras
+                            Mouses
                             <small>(1450)</small>
                         </label>
                     </div>
@@ -38,7 +38,7 @@ const ShoppingSideNav = () => {
                         <input type="checkbox" id="category-4"/>
                         <label htmlFor="category-4">
                             <span></span>
-                            Accessories
+                            Mousepads
                             <small>(578)</small>
                         </label>
                     </div>
@@ -47,7 +47,16 @@ const ShoppingSideNav = () => {
                         <input type="checkbox" id="category-5"/>
                         <label htmlFor="category-5">
                             <span></span>
-                            Laptops
+                            Keyboards
+                            <small>(875)</small>
+                        </label>
+                    </div>
+
+                    <div className="input-checkbox">
+                        <input type="checkbox" id="category-6"/>
+                        <label htmlFor="category-6">
+                            <span></span>
+                            Gaming Chairs
                             <small>(120)</small>
                         </label>
                     </div>
@@ -56,10 +65,13 @@ const ShoppingSideNav = () => {
                         <input type="checkbox" id="category-6"/>
                         <label htmlFor="category-6">
                             <span></span>
-                            Smartphones
-                            <small>(740)</small>
+                            Headsets
+                            <small>(431)</small>
                         </label>
                     </div>
+                    
+
+                    
                 </div>
             </div>
 
@@ -139,7 +151,7 @@ const ShoppingSideNav = () => {
                 <h3 className="aside-title">Top selling</h3>
                 <div className="product-widget">
                     <div className="product-img">
-                    <img src="/images/product02.png" alt="" />
+                    <img src="/images/ASUS-TUF-Gaming-FX505DV.jpeg" alt="" />
                     </div>
                     <div className="product-body">
                         <p className="product-category">Category</p>
@@ -150,7 +162,7 @@ const ShoppingSideNav = () => {
 
                 <div className="product-widget">
                     <div className="product-img">
-                        <img src="../images/product02.png" alt=""/>
+                        <img src="../images/msi-gaming-laptop.png" alt=""/>
                     </div>
                     <div className="product-body">
                         <p className="product-category">Category</p>
@@ -161,12 +173,12 @@ const ShoppingSideNav = () => {
 
                 <div className="product-widget">
                     <div className="product-img">
-                        <img src="../images/product03.png" alt=""/>
+                        <img src="../images/asus-tuf-gaming-monitor.jpg" alt=""/>
                     </div>
                     <div className="product-body">
-                        <p className="product-category">Category</p>
-                        <h3 className="product-name"><a href="#">product name goes here</a></h3>
-                        <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+                        <p className="product-category">Monitors</p>
+                        <h3 className="product-name"><a href="#">ASUS TUF GAMING Monitor</a></h3>
+                        <h4 className="product-price">$150.00 <del className="product-old-price">$300.00</del></h4>
                     </div>
                 </div>
             </div>

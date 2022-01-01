@@ -6,6 +6,7 @@ import {
     GrYoutube as Youtube
 } from "react-icons/gr";
 import ShoppingNavbar from '../components/shopping/Navbar/ShoppingNavbar';
+import NewsletterSignup from '../components/shopping/NewsletterSignup';
 import ShoppingFooter from '../components/shopping/ShoppingFooter';
 
 const Checkout = () => {
@@ -175,37 +176,7 @@ const Checkout = () => {
 				</div>		
 			</div>		
 		</div>
-
-		<div id="newsletter" class="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="newsletter">
-							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
-							<form>
-								<input class="input" type="email" placeholder="Enter Your Email"/>
-								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
-							</form>
-							<ul class="newsletter-follow">
-                                <li>
-									<a href="#"><Facebook/></a>
-								</li>
-								<li>
-									<a href="#"><Instagram/></a>
-								</li>
-								<li>
-									<a href="#"><Twitter /></a>
-								</li>
-								<li>
-									<a href="#"><Youtube/></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>	
-			</div>	
-		</div>
-	
+        <NewsletterSignup />
         <ShoppingFooter />
         </div>
     )

@@ -15,22 +15,22 @@ const ShoppingCartDropdown = () => {
                 <div className="cart-list">
                     <div className="product-widget">
                         <div className="product-img">
-                            <img src="/images/product01.png" alt="" />
+                            <img src="/images/asus-rog-gladius-mouse.jpg" alt="" />
                         </div>
                         <div className="product-body">
-                            <h3 className="product-name"><a href="#">ASUS TUF GAMING</a></h3>
-                            <h4 className="product-price"><span className="qty">1x</span>$1500.00</h4>
+                            <h3 className="product-name"><a href="#">ASUS ROG GLADIUS MOUSE</a></h3>
+                            <h4 className="product-price"><span className="qty">1x</span>$150.00</h4>
                         </div>
                         
                     </div>
 
                     <div className="product-widget">
                         <div className="product-img">
-                            <img src="/images/product02.png" alt="" />
+                            <img src="/images/asus-rog-gaming-mousepad.jpg" alt="" />
                         </div>
                         <div className="product-body">
-                            <h3 className="product-name"><a href="#">LOGITECH HEADSETS</a></h3>
-                            <h4 className="product-price"><span className="qty">3x</span>$150.00</h4>
+                            <h3 className="product-name"><a href="#">ASUS ROG GAMING MOUSEPAD</a></h3>
+                            <h4 className="product-price"><span className="qty">1x</span>$150.00</h4>
                         </div>            
                     </div>
                 </div>

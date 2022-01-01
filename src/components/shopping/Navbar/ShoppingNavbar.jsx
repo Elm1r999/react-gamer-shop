@@ -23,9 +23,13 @@ const ShoppingNavbar = () => {
 							<div className="header-search">
 								<form>
 									<select className="input-select">
-										<option value="0">All Categories</option>
-										<option value="1">Category 01</option>
-										<option value="1">Category 02</option>
+										<option value="all">All Categories</option>
+										<option value="chairs">Gaming Chairs</option>
+										<option value="laptops">Laptops</option>
+										<option value="monitors">Monitors</option>
+										<option value="mouses">Mouses</option>
+										<option value="mousepads">Mousepads</option>
+										<option value="headsets">Headsets</option>									
 									</select>
 									<input className="input" placeholder="Search here"/>
 									<button className="search-btn">Search</button>

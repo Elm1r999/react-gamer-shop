@@ -4,7 +4,7 @@ import ShoppingNavbar from '../components/shopping/Navbar/ShoppingNavbar'
 import ShoppingNavigation from '../components/shopping/Navbar/ShoppingNavigation'
 import ShoppingBreadcrumb from '../components/shopping/Navbar/ShoppingBreadcrumb'
 import ShoppingFooter from '../components/shopping/ShoppingFooter.jsx'
-import {BsStarFill, BsStarHalf} from 'react-icons/bs'
+import {BsArrowLeftRight, BsArrowRight, BsCartPlus, BsStar, BsStarFill, BsStarHalf, BsHeartFill, BsEyeFill, BsHeartHalf} from 'react-icons/bs'
 import {FaEnvelopeOpenText, FaFacebook, FaTwitter, FaGooglePlus} from 'react-icons/fa'
 
 const Product = () => {
@@ -19,7 +19,7 @@ const Product = () => {
 					<div className="col-md-5 col-md-push-2">
 						<div id="product-main-img">
 							<div className="product-preview">
-								<img src="/images/product01.png" alt="" />
+								<img src="/images/ASUS-TUF-Gaming-FX505DV.jpeg" alt="" />
 							</div>
 						</div>
 					</div>
@@ -27,33 +27,29 @@ const Product = () => {
 					<div className="col-md-2  col-md-pull-5">
 						<div id="product-imgs">
 							<div className="product-preview">
-								<img src="/images/product01.png" alt="" />
+								<img src="/images/ASUS-TUF-Gaming-FX505DV.jpeg" alt="" />
 							</div>
 
 							<div className="product-preview">
-								<img src="/images/product03.png" alt="" />
+								<img src="/images/asus-tuf-gaming-monitor.jpg" alt="" />
 							</div>
 
 							<div className="product-preview">
-								<img src="/images/product06.png" alt="" />
-							</div>
-
-							<div className="product-preview">
-								<img src="/images/product08.png" alt="" />
+								<img src="/images/msi-gaming-laptop.png" alt="" />
 							</div>
 						</div>
 					</div>
 	
 					<div className="col-md-5">
 						<div className="product-details">
-							<h2 className="product-name">product name goes here</h2>
+							<h2 className="product-name">ASUS TUF FX505 GAMING LAPTOP</h2>
 							<div>
 								<div className="product-rating">
-									<i className="fa fa-star"></i>
-									<i className="fa fa-star"></i>
-									<i className="fa fa-star"></i>
-									<i className="fa fa-star"></i>
-									<i className="fa fa-star-o"></i>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarHalf/>
 								</div>
 								<a className="review-link" href="#">10 Review(s) | Add your review</a>
 							</div>
@@ -64,41 +60,33 @@ const Product = () => {
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
 							<div className="product-options">
-								<label>
-									Size
-									<select className="input-select">
-										<option value="0">X</option>
-									</select>
-								</label>
-								<label>
-									Color
-									<select className="input-select">
-										<option value="0">Red</option>
-									</select>
-								</label>
+								<label>Model:</label>&nbsp;&nbsp;
+								<select className="input-select">
+									<option value="0">FX505DV</option>
+								</select>
+								&nbsp;&nbsp;&nbsp;&nbsp;					
+								<label>	Color:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+								<select className="input-select">
+									<option value="0">Black</option>
+								</select>
 							</div>
 
 							<div className="add-to-cart">
 								<div className="qty-label">
-									Qty
+									<label htmlFor="">Quantity:</label>&nbsp;&nbsp;&nbsp;&nbsp;
 									<div className="input-number">
 										<input type="number"/>
 										<span className="qty-up">+</span>
 										<span className="qty-down">-</span>
 									</div>
 								</div>
-								<button className="add-to-cart-btn"><i className="fa fa-shopping-cart"></i> add to cart</button>
+								<button className="add-to-cart-btn">add to cart</button>
 							</div>
-
-							<ul className="product-btns">
-								<li><a href="#"><i className="fa fa-heart-o"></i> add to wishlist</a></li>
-								<li><a href="#"><i className="fa fa-exchange"></i> add to compare</a></li>
-							</ul>
 
 							<ul className="product-links">
 								<li>Category:</li>
-								<li><a href="#">Headphones</a></li>
-								<li><a href="#">Accessories</a></li>
+								<li><a href="#">Laptops</a></li>
+								<li><a href="#">ASUS</a></li>
 							</ul>
 
 							<ul className="product-links">
@@ -158,7 +146,7 @@ const Product = () => {
                                                             <BsStarFill/>
                                                             <BsStarFill/>
                                                             <BsStarFill/>
-                                                            <BsStarHalf/>
+                                                            <BsStarFill/>
 														</div>
 														<div className="rating-progress">											
 														</div>
@@ -166,11 +154,11 @@ const Product = () => {
 													</li>
 													<li>
 														<div className="rating-stars">
-															<i className="fa fa-star"></i>
-															<i className="fa fa-star"></i>
-															<i className="fa fa-star"></i>
-															<i className="fa fa-star"></i>
-															<i className="fa fa-star-o"></i>
+															<BsStarFill/>
+                                                            <BsStarFill/>
+                                                            <BsStarFill/>
+                                                            <BsStarFill/>
+                                                            <BsStar/>
 														</div>
 														<div className="rating-progress">															
 														</div>
@@ -178,11 +166,11 @@ const Product = () => {
 													</li>
 													<li>
 														<div className="rating-stars">
-															<i className="fa fa-star"></i>
-															<i className="fa fa-star"></i>
-															<i className="fa fa-star"></i>
-															<i className="fa fa-star-o"></i>
-															<i className="fa fa-star-o"></i>
+															<BsStarFill/>
+                                                            <BsStarFill/>
+                                                            <BsStarFill/>
+                                                            <BsStar/>
+                                                            <BsStar/>
 														</div>
 														<div className="rating-progress">
 															<div></div>
@@ -191,11 +179,11 @@ const Product = () => {
 													</li>
 													<li>
 														<div className="rating-stars">
-															<i className="fa fa-star"></i>
-															<i className="fa fa-star"></i>
-															<i className="fa fa-star-o"></i>
-															<i className="fa fa-star-o"></i>
-															<i className="fa fa-star-o"></i>
+															<BsStarFill/>
+                                                            <BsStarFill/>
+                                                            <BsStar/>
+                                                            <BsStar/>
+                                                            <BsStar/>
 														</div>
 														<div className="rating-progress">
 															<div></div>
@@ -204,11 +192,11 @@ const Product = () => {
 													</li>
 													<li>
 														<div className="rating-stars">
-															<i className="fa fa-star"></i>
-															<i className="fa fa-star-o"></i>
-															<i className="fa fa-star-o"></i>
-															<i className="fa fa-star-o"></i>
-															<i className="fa fa-star-o"></i>
+															<BsStarFill/>
+                                                            <BsStar/>
+                                                            <BsStar/>
+                                                            <BsStar/>
+                                                            <BsStar/>
 														</div>
 														<div className="rating-progress">
 															<div></div>
@@ -227,11 +215,11 @@ const Product = () => {
 															<h5 className="name">John</h5>
 															<p className="date">{new Date().toLocaleDateString('en-UK')}</p>
 															<div className="review-rating">
-																<i className="fa fa-star"></i>
-																<i className="fa fa-star"></i>
-																<i className="fa fa-star"></i>
-																<i className="fa fa-star"></i>
-																<i className="fa fa-star-o empty"></i>
+																<BsStarFill />
+																<BsStarFill />
+																<BsStarFill />
+																<BsStarFill />
+																<BsStarFill />
 															</div>
 														</div>
 														<div className="review-body">
@@ -243,11 +231,11 @@ const Product = () => {
 															<h5 className="name">John</h5>
 															<p className="date">{new Date().toLocaleDateString('en-UK')}</p>
 															<div className="review-rating">
-																<i className="fa fa-star"></i>
-																<i className="fa fa-star"></i>
-																<i className="fa fa-star"></i>
-																<i className="fa fa-star"></i>
-																<i className="fa fa-star-o empty"></i>
+																<BsStarFill />
+																<BsStarFill />
+																<BsStarFill />
+																<BsStarFill />
+																<BsStarHalf />
 															</div>
 														</div>
 														<div className="review-body">
@@ -259,11 +247,11 @@ const Product = () => {
 															<h5 className="name">John</h5>
 															<p className="date">{new Date().toLocaleDateString('en-UK')}</p>
 															<div className="review-rating">
-																<i className="fa fa-star"></i>
-																<i className="fa fa-star"></i>
-																<i className="fa fa-star"></i>
-																<i className="fa fa-star"></i>
-																<i className="fa fa-star-o empty"></i>
+																<BsStarFill />
+																<BsStarFill />
+																<BsStarFill />
+																<BsStarFill />
+																<BsStarFill />
 															</div>
 														</div>
 														<div className="review-body">
@@ -276,7 +264,7 @@ const Product = () => {
 													<li><a href="#">2</a></li>
 													<li><a href="#">3</a></li>
 													<li><a href="#">4</a></li>
-													<li><a href="#"><i className="fa fa-angle-right"></i></a></li>
+													<li><a href="#"><BsArrowRight/></a></li>
 												</ul>
 											</div>
 										</div>
@@ -288,13 +276,18 @@ const Product = () => {
 													<input className="input" type="email" placeholder="Your Email"/>
 													<textarea className="input" placeholder="Your Review"></textarea>
 													<div className="input-rating">
-														<span>Your Rating: </span>
-														<div className="stars">
-															<input id="star5" name="rating" value="5" type="radio"/><label for="star5"></label>
-															<input id="star4" name="rating" value="4" type="radio"/><label for="star4"></label>
-															<input id="star3" name="rating" value="3" type="radio"/><label for="star3"></label>
-															<input id="star2" name="rating" value="2" type="radio"/><label for="star2"></label>
-															<input id="star1" name="rating" value="1" type="radio"/><label for="star1"></label>
+														<span>Your Rating: </span><br/>
+														<div className="rate">																							
+															<input type="radio" id="star5" name="rate" value="5" />
+															<label for="star5" title="text">5 stars</label>
+															<input type="radio" id="star4" name="rate" value="4" />
+															<label for="star4" title="text">4 stars</label>
+															<input type="radio" id="star3" name="rate" value="3" />
+															<label for="star3" title="text">3 stars</label>
+															<input type="radio" id="star2" name="rate" value="2" />
+															<label for="star2" title="text">2 stars</label>
+															<input type="radio" id="star1" name="rate" value="1" />
+															<label for="star1" title="text">1 star</label>
 														</div>
 													</div>
 													<button className="primary-btn">Submit</button>
@@ -323,25 +316,31 @@ const Product = () => {
 					<div className="col-md-3 col-xs-6">
 						<div className="product">
 							<div className="product-img">
-								<img src="/images/product01.png" alt="" />
+								<img src="/images/ASUS-TUF-Gaming-FX505DV.jpeg" alt="" />
 								<div className="product-label">
-									<span className="sale">-30%</span>
+									<span className="sale">-50%</span>
 								</div>
 							</div>
 							<div className="product-body">
 								<p className="product-category">Category</p>
 								<h3 className="product-name"><a href="#">product name goes here</a></h3>
-								<h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+								<h4 className="product-price">$1500.00 <del className="product-old-price">$3000.00</del></h4>
+								<br />
+								<div className="add-to-cart">
+									<button className="add-to-cart-btn"><BsCartPlus/> add to cart</button>
+								</div>
 								<div className="product-rating">
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarHalf/>
 								</div>
 								<div className="product-btns">
-									<button className="add-to-wishlist"><i className="fa fa-heart-o"></i><span className="tooltipp">add to wishlist</span></button>
-									<button className="add-to-compare"><i className="fa fa-exchange"></i><span className="tooltipp">add to compare</span></button>
-									<button className="quick-view"><i className="fa fa-eye"></i><span className="tooltipp">quick view</span></button>
+									<button className="add-to-wishlist"><BsHeartFill/><span className="tooltipp">add to wishlist</span></button>
+									<button className="add-to-compare"><BsArrowLeftRight/><span className="tooltipp">add to compare</span></button>
+									<button className="quick-view"><BsEyeFill/><span className="tooltipp">quick view</span></button>
 								</div>
-							</div>
-							<div className="add-to-cart">
-								<button className="add-to-cart-btn"><i className="fa fa-shopping-cart"></i> add to cart</button>
 							</div>
 						</div>
 					</div>
@@ -349,7 +348,7 @@ const Product = () => {
 					<div className="col-md-3 col-xs-6">
 						<div className="product">
 							<div className="product-img">
-								<img src="/images/product02.png" alt="" />
+								<img src="/images/asus-tuf-gaming-monitor.jpg" alt="" />
 								<div className="product-label">
 									<span className="new">NEW</span>
 								</div>
@@ -357,22 +356,23 @@ const Product = () => {
 							<div className="product-body">
 								<p className="product-category">Category</p>
 								<h3 className="product-name"><a href="#">product name goes here</a></h3>
-								<h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+								<h4 className="product-price">$150.00 <del className="product-old-price">$300.00</del></h4>
+								<br />
+								<div className="add-to-cart">
+									<button className="add-to-cart-btn"><BsCartPlus/> add to cart</button>
+								</div>
 								<div className="product-rating">
-									<i className="fa fa-star"></i>
-									<i className="fa fa-star"></i>
-									<i className="fa fa-star"></i>
-									<i className="fa fa-star"></i>
-									<i className="fa fa-star"></i>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarHalf/>
 								</div>
 								<div className="product-btns">
-									<button className="add-to-wishlist"><i className="fa fa-heart-o"></i><span className="tooltipp">add to wishlist</span></button>
-									<button className="add-to-compare"><i className="fa fa-exchange"></i><span className="tooltipp">add to compare</span></button>
-									<button className="quick-view"><i className="fa fa-eye"></i><span className="tooltipp">quick view</span></button>
+									<button className="add-to-wishlist"><BsHeartFill/><span className="tooltipp">add to wishlist</span></button>
+									<button className="add-to-compare"><BsArrowLeftRight/><span className="tooltipp">add to compare</span></button>
+									<button className="quick-view"><BsEyeFill/><span className="tooltipp">quick view</span></button>
 								</div>
-							</div>
-							<div className="add-to-cart">
-								<button className="add-to-cart-btn"><i className="fa fa-shopping-cart"></i> add to cart</button>
 							</div>
 						</div>
 					</div>
@@ -382,27 +382,28 @@ const Product = () => {
 					<div className="col-md-3 col-xs-6">
 						<div className="product">
 							<div className="product-img">
-								<img src="/images/product03.png" alt="" />
+								<img src="/images/gaming-chair.jpeg" alt="" />
 							</div>
 							<div className="product-body">
 								<p className="product-category">Category</p>
 								<h3 className="product-name"><a href="#">product name goes here</a></h3>
-								<h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+								<h4 className="product-price">$150.00 <del className="product-old-price">$300.00</del></h4>
+								<br />
+								<div className="add-to-cart">
+									<button className="add-to-cart-btn"><BsCartPlus/> add to cart</button>
+								</div>
 								<div className="product-rating">
-									<i className="fa fa-star"></i>
-									<i className="fa fa-star"></i>
-									<i className="fa fa-star"></i>
-									<i className="fa fa-star"></i>
-									<i className="fa fa-star-o"></i>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarHalf/>
 								</div>
 								<div className="product-btns">
-									<button className="add-to-wishlist"><i className="fa fa-heart-o"></i><span className="tooltipp">add to wishlist</span></button>
-									<button className="add-to-compare"><i className="fa fa-exchange"></i><span className="tooltipp">add to compare</span></button>
-									<button className="quick-view"><i className="fa fa-eye"></i><span className="tooltipp">quick view</span></button>
+									<button className="add-to-wishlist"><BsHeartFill/><span className="tooltipp">add to wishlist</span></button>
+									<button className="add-to-compare"><BsArrowLeftRight/><span className="tooltipp">add to compare</span></button>
+									<button className="quick-view"><BsEyeFill/><span className="tooltipp">quick view</span></button>
 								</div>
-							</div>
-							<div className="add-to-cart">
-								<button className="add-to-cart-btn"><i className="fa fa-shopping-cart"></i> add to cart</button>
 							</div>
 						</div>
 					</div>
@@ -410,22 +411,28 @@ const Product = () => {
 					<div className="col-md-3 col-xs-6">
 						<div className="product">
 							<div className="product-img">
-								<img src="/images/product04.png" alt="" />
+								<img src="/images/msi-gaming-laptop.png" alt="" />
 							</div>
 							<div className="product-body">
 								<p className="product-category">Category</p>
 								<h3 className="product-name"><a href="#">product name goes here</a></h3>
-								<h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+								<h4 className="product-price">$150.00 <del className="product-old-price">$300.00</del></h4>
+								<br />
+								<div className="add-to-cart">
+									<button className="add-to-cart-btn"><BsCartPlus/> add to cart</button>
+								</div>
 								<div className="product-rating">
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarFill/>
+									<BsStarHalf/>
 								</div>
 								<div className="product-btns">
-									<button className="add-to-wishlist"><i className="fa fa-heart-o"></i><span className="tooltipp">add to wishlist</span></button>
-									<button className="add-to-compare"><i className="fa fa-exchange"></i><span className="tooltipp">add to compare</span></button>
-									<button className="quick-view"><i className="fa fa-eye"></i><span className="tooltipp">quick view</span></button>
+									<button className="add-to-wishlist"><BsHeartFill/><span className="tooltipp">add to wishlist</span></button>
+									<button className="add-to-compare"><BsArrowLeftRight/><span className="tooltipp">add to compare</span></button>
+									<button className="quick-view"><BsEyeFill/><span className="tooltipp">quick view</span></button>
 								</div>
-							</div>
-							<div className="add-to-cart">
-								<button className="add-to-cart-btn"><i className="fa fa-shopping-cart"></i> add to cart</button>
 							</div>
 						</div>
 					</div>
