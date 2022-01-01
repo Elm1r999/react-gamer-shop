@@ -16,9 +16,9 @@ const Home = () => {
       <Announcement />
       <Navbar toggle={toggle} />
         <Intro />
-        <div id="featured-products" name="featured-products">
+        {/* <div id="featured-products" name="featured-products">
           <Featured />
-        </div>        
+        </div>         */}
         <div id="discover" name="discover">
          <Discover />
         </div>
