@@ -1,7 +1,7 @@
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { useState } from "react";
 import styled from "styled-components";
-import { sliderItems } from "../../data/data.js";
+import { sliderItems } from "../../data/homepage-slider.js";
 import { mobile } from "../../responsive";
 import { Link } from "react-router-dom";
 

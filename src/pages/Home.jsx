@@ -4,7 +4,6 @@ import Footer from "../components/home/Footer";
 import Discover from "../components/home/Discover";
 import Navbar from "../components/home/Navbar";
 import Intro from "../components/home/Intro";
-import Featured from "../components/home/Featured";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,12 +14,7 @@ const Home = () => {
     <div>
       <Announcement />
       <Navbar toggle={toggle} />
-        <Intro />
-        {/* 
-        <div id="featured-products" name="featured-products">
-          <Featured />
-        </div>         
-        */}
+        <Intro />       
         <div id="discover" name="discover">
          <Discover />
         </div>

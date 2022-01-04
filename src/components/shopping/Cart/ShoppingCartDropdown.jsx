@@ -5,7 +5,7 @@ import {ImArrowRight} from 'react-icons/im'
 const ShoppingCartDropdown = () => {
     return (
         <div className="dropdown">
-            <a href="#" className="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+            <a href="/cart" className="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                 <BsCart className='shopping-cart-icon'/>
                 <br/>
                 <span>Your Cart</span>
@@ -18,7 +18,7 @@ const ShoppingCartDropdown = () => {
                             <img src="/images/asus-rog-gladius-mouse.jpg" alt="" />
                         </div>
                         <div className="product-body">
-                            <h3 className="product-name"><a href="#">ASUS ROG GLADIUS MOUSE</a></h3>
+                            <h3 className="product-name"><a href="/product">ASUS ROG GLADIUS MOUSE</a></h3>
                             <h4 className="product-price"><span className="qty">1x</span>$150.00</h4>
                         </div>
                         
@@ -29,7 +29,7 @@ const ShoppingCartDropdown = () => {
                             <img src="/images/asus-rog-gaming-mousepad.jpg" alt="" />
                         </div>
                         <div className="product-body">
-                            <h3 className="product-name"><a href="#">ASUS ROG GAMING MOUSEPAD</a></h3>
+                            <h3 className="product-name"><a href="/product">ASUS ROG GAMING MOUSEPAD</a></h3>
                             <h4 className="product-price"><span className="qty">1x</span>$150.00</h4>
                         </div>            
                     </div>
@@ -39,8 +39,8 @@ const ShoppingCartDropdown = () => {
                     <h5>SUBTOTAL: $1650.00</h5>
                 </div>
                 <div className="cart-btns">
-                    <a href="#">View Cart</a>
-                    <a href="#">Checkout  <ImArrowRight/></a>
+                    <a href="/cart">View Cart</a>
+                    <a href="/checkout">Checkout  <ImArrowRight/></a>
                 </div>
             </div>
         </div>

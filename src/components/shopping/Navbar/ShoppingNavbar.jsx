@@ -31,7 +31,7 @@ const ShoppingNavbar = () => {
 										<option value="mousepads">Mousepads</option>
 										<option value="headsets">Headsets</option>									
 									</select>
-									<input className="input" placeholder="Search here"/>
+									<input className="input" placeholder="Search here..."/>
 									<button className="search-btn">Search</button>
 								</form>
 							</div>
@@ -40,7 +40,7 @@ const ShoppingNavbar = () => {
 						<div className="col-md-3 clearfix">
 							<div className="header-ctn">
 								<div>
-									<a href="#">
+									<a href="/wishlist">
 										<BsHeart className='wishlist-heart-icon'/>
 										<br/>
 										<span>Your Wishlist</span>
@@ -51,7 +51,7 @@ const ShoppingNavbar = () => {
 								<ShoppingCartDropdown />								
 
 								<div className="menu-toggle">
-									<a href="#">
+									<a href="/">
 										<FaBars />
 										<span>Menu</span>
 									</a>
